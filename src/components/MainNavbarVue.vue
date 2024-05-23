@@ -10,6 +10,7 @@
 
 <script lang="ts">
 import { defineComponent,PropType } from "vue";
+import { Categories } from "@/types/Categories";
 
 
 interface ItemType {
@@ -22,7 +23,7 @@ interface ItemType {
 export default defineComponent({
   props: {
     items: {
-      type: Array as PropType<ItemType[]>,
+      type: Array as PropType<Categories[]>,
       required: true,
     },
   },
