@@ -2,7 +2,6 @@ export default function useFetchPosts() {
   const baseURL = process.env.VUE_APP_BASE_URL;
   const fetchData = async (slug: string) => {
     try {
-      console.log(process.env.VUE_APP_BASE_URL);
       
       const response = await fetch(
         `${baseURL}/api/app/dynamic-content/publics?CategorySlug=${slug}&Language=ar`
